@@ -25,7 +25,7 @@ Um teste unitário não pode acessar outros componentes ou recursos externos (ar
 
 
 ### Exercicio proposto:
-![img_2.png](img_2.png)
+![img_2.png](src/img_2.png)
 
 ### Cenários de Teste
 
