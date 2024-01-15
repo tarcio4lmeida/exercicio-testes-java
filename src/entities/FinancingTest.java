@@ -87,6 +87,4 @@ class FinancingTest {
         Financing f1 = new Financing(100000.0, 2000.0, 80);
         assertEquals(expectedValue, f1.quota());
     }
-
-
 }
