@@ -19,4 +19,21 @@ class FinancingTest {
 
         });
     }
+
+    //Deve atualizar o valor quando os dados forem válidos
+    @Test
+    public void deveAtualizarOValorQuandoOsDadosForemValidos(){
+        Financing f1 = new Financing(100000.0, 2210.0, 80);
+        f1.setTotalAmount(110000.0);
+
+    }
+    //Deve lançar IllegalArgumentException quando os dados não forem válidos
+    @Test
+    public void deveLancarIllegalArgumentExceptionQuandoOValorQuandoOsDadosForemInValidos(){
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            Financing f1 = new Financing(100000.0, 2210.0, 80);
+            f1.setTotalAmount(120000.0);
+        });
+    }
+
 }
